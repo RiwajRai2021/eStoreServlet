@@ -48,10 +48,12 @@ public class HelloServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		
-		String htmlResponse = "<center><h3>Welcome to Home</h3>"
-				+ "<p>Request Served at "+new Date()+"</p>";
+		String htmlResponse = "<center><h3>Welcome to Home Admin</h3>"
+				+ "<p>Request Served at "+new Date()+"</p>"
+				+"<p><a href = 'add-product.html'>ADD PRODUCTS</a></p>";
 		out.print(htmlResponse);
 
+		/*
 		//1.Session Tracking with Cookies
 		//Reading Cookies
 		
@@ -70,6 +72,9 @@ public class HelloServlet extends HttpServlet {
 		
 		out.print("<p><b>URL ReWriting Data</b></p>");
 		out.print("<p>NAME: "+name+" | SALES: "+sales+"</p>");
+		
+		*/
+		
 		
 		out.print("</center>");
 

@@ -51,6 +51,12 @@ public class LoginServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+		out.print("<center>");
+		out.print("<p>Welcome to Home<br><a href='Home'>Click to nagivate to Home</a></p>");
+	
+		/*
+		 * 
+		 * 
 		
 		String message = ""; 
 		
@@ -70,7 +76,7 @@ public class LoginServlet extends HttpServlet {
 			//Writing data in the URl directly
 			String url = "Home?name="+NAME+"&sales="+TOTAL_SALES; 
 			
-//			message = "<p>Welcome to Home<br><a href='Home'>Click to nagivate to Home</a></p>"; 
+//			message = "<p>Welcome to Home<br><a href='Welcome'>Click to nagivate to Home</a></p>"; 
 
 						
 			message = "<p>Welcome to Home<br><a href='"+url+"'>Click to nagivate to Home</a></p>"; 
@@ -102,6 +108,12 @@ public class LoginServlet extends HttpServlet {
 
 	}
 
+
+		 * 
+		 * 
+		 */
+	
+		}
  
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
